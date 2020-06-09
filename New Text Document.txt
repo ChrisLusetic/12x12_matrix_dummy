@@ -1,0 +1,13 @@
+for j in range(11):
+    for i in range(11):
+		#move horiyontaly then go to next row
+		place_component_relative_mm('D%s' % (i*j + 1), 'D%s' % (i*j + 2), 8.33, 0)
+    place_component_relative_mm('D%s' % (j + 1), 'D%s' % (j + 2), 0, 8.33)
+
+#execfile(r'C:\Users\Chris\Desktop\test.py')
+
+for j in range(2):
+    for i in range(11):
+		#move horiyontaly then go to next row
+		place_component_relative_mm('D%s' % ((i+1)*(j+1) ), 'D%s' % ((i+2)*(j+2)), 8.33, 0)
+    #place_component_relative_mm('D%s' % (j*11 + 1), 'D%s' % (j*11 + 2), 0, 8.33)
